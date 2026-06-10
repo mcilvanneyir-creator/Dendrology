@@ -1,0 +1,177 @@
+```
+<link rel="stylesheet" href="style.css">
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8fff8;
+        color: #003300;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .main-container {
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .nav-container {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e0eee0;
+        color: springgreen;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        color: #004d00;
+    }
+
+    h2 {
+        text-align: center;
+        font-weight: normal;
+        color: #006600;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .text-container {
+        border: 3px solid springgreen;
+        padding: 20px;
+        border-radius: 10px;
+        line-height: 1.6;
+        background-color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .image-container {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .tree-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 40px;
+    }
+
+    .gallery-item {
+        border: 1px solid #eee;
+        border-radius: 8px;
+        overflow: hidden;
+        background: white;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+        transform: scale(1.03);
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: crop;
+    }
+
+    .gallery-caption {
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        color: #004d00;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: springgreen;
+        color: #003300;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-align: center;
+        margin: 5px 5px 5px 0;
+        transition: background-color 0.3s ease, transform 0.1s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: mediumseagreen;
+        color: white;
+        transform: translateY(-2px);
+    }
+
+    .button:active {
+        transform: translateY(0);
+    }
+
+    .text-container .button {
+        margin-top: 15px;
+    }
+</style>
+
+```
+
+```
+<div class="nav-container">
+    <a href="index.html" class="button">Home</a> | 
+    <a href="about trees.html" class="button">About Trees</a> 
+</div>
+
+<div class="main-container">
+    
+    <h1>Welcome to Dendrology.com</h1>
+    <h2>The home for all of your tree needs!</h2>
+    
+    <div class="image-container">
+        <img src="[https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=800&auto=format&fit=crop](https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=800&auto=format&fit=crop)" alt="A large, majestic green tree in a foggy field">
+    </div>
+    
+    <div class="text-container">
+        <p>
+            Want to know more about trees? Click "About Trees" above or explore our resources below.
+        </p>
+        
+        <p>
+            Dendrology is the study of wooded plants (trees, shrubs, and lianas). On this site, we explore the identification, distribution, and ecology of various tree species. Whether you are a student, an arborist, or just someone who loves nature, you'll find fascinating information here. Phasellus aliquet tempor erat, at accumsan ipsum iaculis vel. Nullam at ante at dui sodales pretium ac a dui. Suspendisse potenti.
+        </p>
+
+        <a href="about trees.html" class="button">Read More About General Tree Knowledge</a>
+    </div>
+
+    <h3>Explore Different Species</h3>
+    <div class="tree-gallery">
+        <div class="gallery-item">
+            <img src="[https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=400&auto=format&fit=crop](https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=400&auto=format&fit=crop)" alt="Sunlight shining through a dense forest">
+            <div class="gallery-caption">Forest Ecology</div>
+        </div>
+        <div class="gallery-item">
+            <img src="[https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=400&auto=format&fit=crop](https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=400&auto=format&fit=crop)" alt="Close up of pine tree rings">
+            <div class="gallery-caption">Conifers</div>
+        </div>
+        <div class="gallery-item">
+            <img src="[https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=400&auto=format&fit=crop](https://images.unsplash.com/photo-1473448912268-2022ce9509d8?q=80&w=400&auto=format&fit=crop)" alt="Deciduous forest in autumn colors">
+            <div class="gallery-caption">Deciduous Trees</div>
+        </div>
+    </div>
+
+</div>
+
+```
