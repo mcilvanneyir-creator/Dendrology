@@ -23,6 +23,31 @@
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dendrology</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fff8;
+            color: #003300;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .main-container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
 
         .nav-container {
@@ -62,7 +87,7 @@
         }
 
         .image-container img {
-            max-width: 100%;
+            max-width: 60%;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -126,21 +151,39 @@
         .button:active {
             transform: translateY(0);
         }
+
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            width: 100%;
+            overflow: hidden; 
+        }
+
+        .logo-img {
+            width: 35%; 
+            max-width: 1875px; 
+            height: auto; 
+            aspect-ratio: 1875 / 950; 
+            object-fit: contain; 
+        }
     </style>
 </head>
 <body>
 
     <div class="nav-container">
         <a href="index.html" class="button">Home</a> | 
-        <a href="about trees.html" class="button">About Trees</a> |
-        <a href="Planting guide.html" class="button">Planting Guide</a> 
+        <a href="about%20trees.html" class="button">About Trees</a> |
+        <a href="Planting%20guide.html" class="button">Planting Guide</a> 
+    </div>
+
+    <div class="logo-wrapper">
+        <img src="./Dendrology.com New logo2.png" alt="Dendrology Logo" class="logo-img">
     </div>
 
     <div class="main-container">
-        
-        <img src="Dendrology.com New logo.png">
-    
-        
+
         <div class="image-container">
             <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?q=80&w=800&auto=format&fit=crop" alt="A large green tree in nature">
         </div>
@@ -154,7 +197,7 @@
                 Dendrology is the study of wooded plants. On this site, we explore the identification, distribution, and ecology of various tree species. Phasellus aliquet tempor erat, at accumsan ipsum iaculis vel. Nullam at ante at dui sodales pretium ac a dui. Suspendisse potenti.
             </p>
 
-            <a href="about trees.html" class="button">Read More About Trees</a>
+            <a href="about%20trees.html" class="button">Read More About Trees</a>
         </div>
 
         <div class="tree-gallery">
