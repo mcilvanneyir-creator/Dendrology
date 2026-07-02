@@ -1,3 +1,4 @@
+HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,15 +9,10 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .about-item img {
-            width: 750px;
-            height: 380px;
-            align-items: center;
-        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8fff8;
-            color: #003300;
+            background-color: #000000;
+            color: #ccffcc;
             margin: 0;
             padding: 20px;
         }
@@ -24,47 +20,68 @@
         .main-container {
             max-width: 960px;
             margin: 0 auto;
-            background-color: white;
+            background-color: #0a110a;
             padding: 40px;
             border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0, 255, 0, 0.15);
         }
 
         .nav-container {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             margin-bottom: 40px;
             padding-bottom: 20px;
-            border-bottom: 1px solid #e0eee0;
+            border-bottom: 1px solid #004d00;
+        }
+
+        .nav-logo {
+            height: 50px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 10px;
         }
 
         h1 {
             text-align: center;
             font-size: 2.5em;
             margin-bottom: 10px;
-            color: #004d00;
+            color: #00ff00;
         }
 
         h2 {
             text-align: left;
             font-weight: bold;
-            color: #006600;
+            color: #32cd32;
             margin-top: 30px;
             margin-bottom: 15px;
             font-size: 1.5em;
         }
 
-        img {
+        h4 {
+            color: #00ff00;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .about-item img {
+            width: 750px;
+            height: 380px;
             display: flex;
-            border: seagreen solid 12px;
             align-items: center;
+            border: 12px solid #004d00;
+            border-radius: 5px;
         }
 
         .text-container {
-            border: 3px solid springgreen;
+            border: 3px solid #00ff00;
             padding: 30px;
             border-radius: 10px;
             line-height: 1.6;
-            background-color: #fff;
+            background-color: #001a00;
             margin-bottom: 30px;
             font-size: 1.1em;
         }
@@ -80,8 +97,8 @@
         .button {
             display: inline-block;
             padding: 10px 20px;
-            background-color: springgreen;
-            color: #003300;
+            background-color: #00ff00;
+            color: #000000;
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
@@ -93,8 +110,8 @@
         }
 
         .button:hover {
-            background-color: mediumseagreen;
-            color: white;
+            background-color: #32cd32;
+            color: #000000;
             transform: translateY(-2px);
         }
 
@@ -106,9 +123,12 @@
 <body>
 
     <div class="nav-container">
-        <a href="index.html" class="button">Home</a> | 
-        <a href="about trees.html" class="button">About Trees</a> |
-        <a href="Planting guide.html" class="button">Planting Guide</a> 
+        <img src="./Dendrology.com New logo3.png" alt="Dendrology Logo" class="nav-logo">
+        <div class="nav-links">
+            <a href="index.html" class="button">Home</a>
+            <a href="about trees.html" class="button">About Trees</a>
+            <a href="Planting guide.html" class="button">Planting Guide</a> 
+        </div>
     </div>
 
     <div class="main-container">
@@ -126,28 +146,35 @@
                 <li><strong>Oxygen Production:</strong> Leaves pull in carbon dioxide and water, and use the energy of the sunto convert this into chemical compounds, giving off oxygen as a by-product.</li>
                 <li><strong>Climate Control:</strong> By absorbing carbon dioxide, trees help to mitigate the greenhouse effect and slow down climate change.</li>
                 <li><strong>Wildlife Habitat:</strong> A single tree can be home to hundreds of species of insects, fungi, moss, mammals, and plants.</li>
-                <li><strong>Decidious Trees</strong> Deciduous trees are woody plants that shed their leaves annually, typically before winter or a dry season.</li>
+                <li><strong>Decidious Trees:</strong> Deciduous trees are woody plants that shed their leaves annually, typically before winter or a dry season.</li>
             </ul>
 
             <h2>Types of Decidious Trees</h2>
-            <div class="about-item"><img src="Maple Tree.jpg"></div>
-            <h4>Maple</h4><p>(Acer): Famous for their deeply lobed leaves, vibrant autumn colors, and winged seeds. Popular species include the Sugar Maple and the Japanese Maple.</p>
-            <div class="about-item"><img src="Oak Tree.webp"></div>
-            <h4>Oak</h4><p>(Quercus): Known for their strength, grandeur, and longevity, oaks produce lobed leaves and acorns. Common varieties include the English Oak and the Red Oak.</p>
-            <div class="about-item"><img src="Birch Tree.jpg"></div>
-            <h4>Birch</h4><p>(Betula): Instantly recognizable by their peeling, bright white or silvery bark and delicate, triangular leaves that turn bright yellow in the fall.</p>
-            <div class="about-item"><img src="Sweet Gum Tree.jpg"></div>
-            <h4>Sweet Gum</h4><p>(Liquidambar): Prized for their star-shaped leaves and spectacular, multi-colored autumn foliage that transitions from vibrant yellow to deep purple.</p>
-            <div class="about-item"><img src="Poplar Tree.jpg"></div>
-            <h4>Poplar & Aspen</h4><p>(Populus): Fast-growing trees with rounded leaves that "quiver" in the wind. They provide beautiful, bright yellow foliage during autumn.</p>
-
-
-           
             
+            <div class="about-item"><img src="Maple Tree.jpg" alt="Maple Tree"></div>
+            <h4>Maple</h4>
+            <p>(Acer): Famous for their deeply lobed leaves, vibrant autumn colors, and winged seeds. Popular species include the Sugar Maple and the Japanese Maple.</p>
+            
+            <div class="about-item"><img src="Oak Tree.webp" alt="Oak Tree"></div>
+            <h4>Oak</h4>
+            <p>(Quercus): Known for their strength, grandeur, and longevity, oaks produce lobed leaves and acorns. Common varieties include the English Oak and the Red Oak.</p>
+            
+            <div class="about-item"><img src="Birch Tree.jpg" alt="Birch Tree"></div>
+            <h4>Birch</h4>
+            <p>(Betula): Instantly recognizable by their peeling, bright white or silvery bark and delicate, triangular leaves that turn bright yellow in the fall.</p>
+            
+            <div class="about-item"><img src="Sweet Gum Tree.jpg" alt="Sweet Gum Tree"></div>
+            <h4>Sweet Gum</h4>
+            <p>(Liquidambar): Prized for their star-shaped leaves and spectacular, multi-colored autumn foliage that transitions from vibrant yellow to deep purple.</p>
+            
+            <div class="about-item"><img src="Poplar Tree.jpg" alt="Poplar Tree"></div>
+            <h4>Poplar & Aspen</h4>
+            <p>(Populus): Fast-growing trees with rounded leaves that "quiver" in the wind. They provide beautiful, bright yellow foliage during autumn.</p>
+
             <a href="index.html" class="button">Back to Home</a>
         </div>
 
     </div>
 
 </body>
-</html>>
+</html>
